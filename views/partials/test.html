@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<header class="header">
+		<a href="" class="name">DETOX cafe</a>
+		<a href="./food" class="menu">Блюда</a>
+		<a href="" class="menu">Напитки</a>
+		<a href="" class="menu">Заказать столик</a>
+		<a href="" class="menu">О нас</a>
+	</header>
+	<div class="background">
+		<img  class="back" src="images/back.jpg">
+	</div>
+	<main class="hello-wrapper">
+		<p class="hello">Добро пожаловать в DETOX cafe!</p>
+	</main>
+	<main class="order">
+		<div class="container">
+			<input type="radio" class="radio" name="orders" id="do-order" checked="">
+			<input type="radio" class="radio" name="orders" id="delete-order">
+			<label for="do-order" class="label">Забронировать столик</label>
+			<label for="delete-order" class="label">Отменить бронь</label>
+		</div>
+		<form class="do-order" method="post">
+			<input type="text" class="field" name="name" required="" placeholder="Введите ваше имя">
+			<input type="text" class="field" name="lastname" required="" placeholder="Введите вашу фамилию">
+			<input type="tel" class="field" name="phone" required="" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+			title="4 to 8 lowercase letters"placeholder="+7-900-000-00-00">
+			<input type="date" class="field" name="date" required="" placeholder="дд.мм.гг">
+			<input type="submit" class="submit" value="Забронировать">
+		</form>
+	</main>
+	
+  </body>
+</html>

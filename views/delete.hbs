@@ -1,0 +1,16 @@
+<div class="background">
+	<img  class="back" src="images/back.jpg">
+</div>
+<main class="order">
+	<div class="container">Удалить бронь</div>
+	<form class="do-order" method="post">
+		<input type="text" class="field" name="name" required="" pattern="[\w\D]{2,}" title="Имя не короче 2 букв" 
+		placeholder="Введите ваше имя">
+		<input type="tel" class="field" name="phone" required="" pattern="8\d{10}" 
+			title="11 цифр без разделителей" placeholder="8##########">
+		<div class="wrapper">
+			<input type="submit" class="submit" value="Удалить">
+		</div>
+		<p class=message>{{message}}</p>
+	</form>
+</main>

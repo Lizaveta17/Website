@@ -1,0 +1,21 @@
+<div class="background">
+	<img  class="back" src="images/back.jpg">
+</div>
+<main class="order">
+	<div class="container">Забронировать столик</div>
+	<form class="do-order" method="post">
+		<input type="text" class="field" name="name" required="" pattern="[\w\D]{2,}" title="Имя не короче 2 букв" 
+		placeholder="Введите ваше имя">
+		<input type="text" class="field" name="lastname" pattern="[\w\D]{2,}" title="Имя не короче 2 букв" required="" placeholder="Введите вашу фамилию">
+		<input type="tel" class="field" name="phone" required="" pattern="8\d{10}" 
+			title="11 цифр без разделителей" placeholder="8##########">
+		<input type="date" class="field" name="date" required="" placeholder="дд.мм.гг">
+		<input type="text" class="field" name="table" required="" placeholder="Введите число от 1 до 6" pattern="[1-6]{1}" 
+		title="число от 1 до 6">
+		<p class=message>{{error}}</p>
+		<div class="wrapper">
+			<input type="submit" class="submit" value="Забронировать">
+		</div>
+		<p class=message>{{success}}</p>
+	</form>
+</main>
